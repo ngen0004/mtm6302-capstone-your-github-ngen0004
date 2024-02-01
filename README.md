@@ -17,4 +17,4 @@ correct or incorrect, then it will give the user the option to select a difficul
 
 The last page will display the score, and correct answers of the questions and the grade optained after answering all the questions.
 
-All these elements will be applied also on the multiple screen sizes like desktop and mobile screen
+All these elements will be applied also on multiple screen sizes like desktop and mobile screen

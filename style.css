@@ -24,6 +24,7 @@ body, html {
     text-decoration: none;
 }
 footer{
+    margin-top: 50px;
     padding: 10px;
     text-align: center;
 }
@@ -63,9 +64,10 @@ label, input{
 .button {
     background-color: #707070;
     color: white;
-    padding: 2px 30px;
+    padding: 5px 30px;
     border-radius: 20px;
     margin: 20px;
+    
 }
 .result{
     border: 2px solid black;
@@ -93,12 +95,11 @@ label, input{
     .difficulty a{
         display: block;
         text-decoration: none;
-        margin: 0px 0px;
     }
     .button {
         background-color: #707070;
         color: white;
-        padding: 2px 30px;
+        padding: 3px 30px;
         border-radius: 20px;        
     }
     .result{
@@ -116,4 +117,8 @@ label, input{
         display: block;
         padding: 2px;
     }
+    footer{
+        margin-top: 20px;
+    }
+
 }

@@ -10,19 +10,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="question">
-            <div class="form-container">
-                <h2>Q1. What type of language is HTML?</h2>
+        <h1 id="quiz">Quiz</h1>
+        <div class="question">            
+            <div class="form-container">                
+                <h4>Q1. What type of language is HTML?</h2>
                 <form action="result.html" method="get">
                     <label><input type="radio" name="questn" value="programming"> Programming Language</label><br>
                     <label><input type="radio" name="questn" value="script"> Scripting Language</label><br>
                     <label><input type="radio" name="questn" value="markup"> Markup Language</label><br>
                     <label><input type="radio" name="questn" value="network"> Network Protocol</label><br>
-                    <button type="submit" class="submit-container">Submit Answer</button>
+                    <button type="submit" class="submit-container">Submit answer</button>
                 </form>
             </div>
-            <div class="error-container">
-                <p class="error">The selected answer is incorrect.<br>
+            <div class="feedback-container">
+                <p class="error">The selected answer is incorrect.<br><br>
                     Please select a <a href="index.html">difficulty level</a>
                 </p>
             </div>            

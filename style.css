@@ -19,79 +19,101 @@ body, html {
     margin-bottom: 75px;
     width: 50%;
 }
-.difficulty{
+.difficulty a{
     margin-bottom: 40px;
+    text-decoration: none;
 }
 footer{
-    background-color: #56ADAD;
-    color: white;
     padding: 10px;
     text-align: center;
 }
+#quiz{
+    margin-top: 50px;
+}
 .question{
     display: flex;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
-    margin-bottom: 20px;    
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 100%;    
 }
-.question .form-container, .error-container{
-    border: 1px solid black;
+.form-container, .feedback-container{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.form-container{
+    padding: 20px;
 }
 
-.difficulty-buttons,
-.options,
-.result {
+.feedback-container{
+    padding: 105px;
+}
+
+label, input{
     display: flex;
-    flex-direction: column;
+    gap: 10px;
 }
-
-.button,
-.option,
-.submit-button {
-    background-color: #007BFF;
+.submit-container{
+    background-color: red;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px 0;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
+    border-radius: 20px;
+    padding: 2px 30px;
 }
-
-.option {
-    background-color: transparent;
-    color: #333;
-    cursor: pointer;
+.button {
+    background-color: #707070;
+    color: white;
+    padding: 2px 30px;
+    border-radius: 20px;
+    margin: 20px;
 }
-
-.option input {
-    margin-right: 10px;
+.result{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 50px;
 }
-
-
+.score span{
+    display: inline;
+    padding: 20px;
+}
 
 @media screen and (max-width: 700px){
     body{
         margin: auto;
     }
-    .navbar-toggler{
-        align-content: right;
-        justify-content: right;
+    .container{
+        display: flex;
     }
-    header nav a{
-        font-size: medium;
+    .header img{
+        margin-bottom: 50px;
     }
-    .container .row{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
+    .difficulty a{
+        display: block;
+        text-decoration: none;
+        margin: 0px 0px;
     }
-    footer .row{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
+    .button {
+        background-color: #707070;
+        color: white;
+        padding: 2px 30px;
+        border-radius: 20px;        
+    }
+    .result{
+        padding: 10px;
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;   
+    }
+    .feedback-container{
+        padding: 85px;
+    }
+    .score span{
+        display: block;
+        padding: 2px;
     }
 }

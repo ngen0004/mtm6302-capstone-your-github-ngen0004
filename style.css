@@ -1,0 +1,97 @@
+body, html {
+    height: 100%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #70cef7;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header img{
+    margin-top: 80px;
+    margin-bottom: 75px;
+    width: 50%;
+}
+.difficulty{
+    margin-bottom: 40px;
+}
+footer{
+    background-color: #56ADAD;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+.question .form-container, .error-container{
+    border: 1px solid black;
+}
+
+.difficulty-buttons,
+.options,
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
+.button,
+.option,
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.option {
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 700px){
+    body{
+        margin: auto;
+    }
+    .navbar-toggler{
+        align-content: right;
+        justify-content: right;
+    }
+    header nav a{
+        font-size: medium;
+    }
+    .container .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+    footer .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+}

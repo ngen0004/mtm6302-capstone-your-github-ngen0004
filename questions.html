@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e3b67895f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="quiz">Quiz</h1>
+        <div class="question">            
+            <div class="form-container">                
+                <h4>Q1. What type of language is HTML?</h4>
+                <form action="result.html" method="get">
+                    <label><input type="radio" name="questn" value="programming"> Programming Language</label><br>
+                    <label><input type="radio" name="questn" value="script"> Scripting Language</label><br>
+                    <label><input type="radio" name="questn" value="markup"> Markup Language</label><br>
+                    <label><input type="radio" name="questn" value="network"> Network Protocol</label><br>
+                    <button type="submit" class="submit-container">Submit answer</button>
+                </form>
+            </div>
+            <div class="feedback-container">
+                <p>The selected answer is incorrect.<br><br>
+                    Please select a <a href="index.html">difficulty level</a>
+                </p>
+            </div>            
+        </div>        
+    </div>
+    <footer>
+        <p>
+            <i class="fa-sharp fa-regular fa-copyright"></i> Gilbert 2024
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

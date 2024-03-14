@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #70cef7;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header img{
+    margin-top: 80px;
+    margin-bottom: 75px;
+    width: 50%;
+}
+.difficulty a{
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+footer{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+#quiz{
+    margin-top: 50px;
+}
+.question{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 100%;    
+}
+.form-container, .feedback-container{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.form-container{
+    padding: 20px;
+}
+
+.feedback-container{
+    padding: 90px;
+}
+
+label, input{
+    display: flex;
+    gap: 10px;
+}
+.submit-container{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 30px;
+}
+.button {
+    background-color: #707070;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+.result{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.score span{
+    display: inline;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        margin: auto;
+    }
+    .container{
+        display: flex;
+    }
+    .header img{
+        margin-bottom: 50px;
+    }
+    .difficulty a{
+        display: block;
+        text-decoration: none;
+    }
+    .button {
+        background-color: #707070;
+        color: white;
+        padding: 3px 30px;
+        border-radius: 20px;        
+    }
+    .result{
+        padding: 10px;
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;   
+    }
+    .feedback-container{
+        padding: 43px;
+    }
+    .score span{
+        display: block;
+        padding: 2px;
+    }
+    footer{
+        margin-top: 20px;
+    }
+
+}
